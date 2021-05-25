@@ -1,4 +1,4 @@
-# go-update: Build self-updating Go programs [![godoc reference](https://godoc.org/github.com/inconshreveable/go-update?status.png)](https://godoc.org/github.com/inconshreveable/go-update)
+# go-update: Build self-updating Go programs
 
 Package update provides functionality to implement secure, self-updating Go programs (or other single-file targets)
 A program can update itself by replacing its executable file with a new version.
@@ -14,7 +14,7 @@ import (
     "fmt"
     "net/http"
 
-    "github.com/inconshreveable/go-update"
+    "github.com/staktrace/go-update"
 )
 
 func doUpdate(url string) error {
@@ -60,6 +60,11 @@ The `go-update` package makes the following promises about API compatibility:
 ## API Breaking Changes
 - **Sept 3, 2015**: The `Options` struct passed to `Apply` was changed to be passed by value instead of passed by pointer. Old API at `28de026`.
 - **Aug 9, 2015**: 2.0 API. Old API at `221d034` or `gopkg.in/inconshreveable/go-update.v0`.
+
+## Project History
+
+This project originally lived at https://github.com/inconshreveable/go-update. However, due to being unmaintained, it was forked to
+https://github.com/staktrace/go-update.
 
 ## License
 Apache
